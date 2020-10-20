@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Pacifico&display=swap');
+
+:root {
+  --dark-orange: #FF6750;
+  --primary-orange: rgb(255, 115, 88);
+  --secondary-orange: rgb(255, 162, 98);
+  --ternary-orange: #ffda88;
+  
+  --dark-blue: #1B9DA7;
+  --primary-blue: #42d8e4;
+  --secondary-blue: #8ae3ff;
+  --ternary-blue: #f0ffff;
+
+  --basic-black: #222222;
+  --soft-black: #bbbbbb;
+}
+
+* {
+  font-family: 'Arimo', sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* logo and icon styles */
+.availy {
+  display: flex;
+  width: 120px;
+}
+
+.availy .icon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+.availy .logoType {
+  align-self: center;
+  font-family: 'Pacifico', cursive;
+  color: var(--dark-orange);
+}
+
+#container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* nav bar */
+#navBar {
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background: white;
+  box-shadow: 0px -20px 30px 50px white;
+  display: flex;
+  z-index: 99;
+}
+
+#navBar #navSpacer {
+  /* width: 50%; */
+  height: 10px;
+  background: blue;
+}
+
+#navBar #accessAcct {
+  align-self: center;
+  display: flex;
+  margin-right: 0;
+}
+#navBar #accessAcct a {
+  margin: 0 20px;
+  color: var(--dark-blue);
+  font-weight: bold;
+  text-decoration: none;
+  align-self: center;
+}
+#navBar #accessAcct #signUp {
+  background: var(--dark-blue);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#navBar #accessAcct #signUp:hover {
+  cursor: pointer;
+  background: var(--primary-blue);
+}
+
+
+/* content area */
+#content {
+  padding-bottom: 150px;
+}
+
+.textSegment {
+  padding: 20px;
+}
+.textSegment .text-seg-header {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  color: var(--basic-black);
+  margin: 20px auto;
+}
+.textSegment .text-seg-info {
+  line-height: 2rem;
+}
+.textSegment .text-seg-btn {
+  background: var(--dark-blue);
+  border: none;
+  margin: 20px;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.textSegment .text-seg-btn:hover {
+  cursor: pointer;
+  background: var(--primary-blue);
+}
+
+.landingImg {
+  /* background-color: black; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+#landing0{
+  background-image: url('./assets/Landing0.png');
+  background-size: 100%;
+}
+#landing1 {
+  background-image: url('./assets/Landing1.png');
+  background-size: 100%;
+}
+#landing2 {
+  background-image: url('./assets/Landing2.png');
+  background-size: 100%;
+}
+#landing3 {
+  background-image: url('./assets/Landing3.png');
+  background-size: 100%;
+}
+
+/* success stories */
+#successStories {
+  width: 100%;
+  background: var(--secondary-orange);
+  padding: 20px;
+  position: relative;
+  /* padding-bottom: 100%; */
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 0;
+}
+
+#successStories h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.75rem;
+  color: var(--basic-black);
+  margin: 20px auto;
+}
+#successStories ul {
+  padding: 0;
+}
+#successStories ul li {
+  list-style-type: none;
+  margin: 50px 20px;
+}
+#successStories ul li .successImg {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 50%;
+}
+#successStories ul li p {
+  line-height: 2rem;
+}
+
+#success1 {
+  background-image: url('./assets/User1.jpg');
+  background-size: 100%;
+}
+#success2 {
+  background-image: url('./assets/User2.jpg');
+  background-size: 100%;
+}
+#success3 {
+  background-image: url('./assets/User3.jpeg');
+  background-size: 100%;
+}
+
+blockquote {
+  font-family: 'Arimo', sans-serif;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+}
+blockquote:before {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  font-size: 3em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+blockquote:after {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  float:right;
+  font-size:3em;
+  line-height: 1;
+  right:0;
+  bottom:-0.5em;
+  content: "\201D";
+}
+blockquote footer {
+  padding: 0 2em 0 0;
+  text-align:right;
+}
+cite:before {
+  content: "\2013\ ";
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+/* footer */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: var(--basic-black);
+  color: white;
+  /* padding: 20px; */
+}
+
+#footer .availy {
+  margin-top: 20px;
+}
+
+#additional {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+}
+#additional li {
+  list-style-type: none;
+}
+#additional li a p{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+#additional li a p:hover {
+  color: var(--primary-blue); 
+}
+
+
+
+/* Log In and Sign Up Pages */
+#logInContent, #signUpContent {
+  padding: 50px 20px 200px 20px;
+  background-image: linear-gradient(to bottom, var(--primary-orange),var(--secondary-orange));
+  min-height: 100vh;
+  width: 100%;
+}
+
+#accountForm {
+  background: white;
+  width: 100%;
+  max-width: 480px;
+  height: 90%;
+  border-radius: 10px;
+  padding: 20px 50px 50px 50px;
+  position: relative;
+}
+
+#accountForm .formHeader {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  color: var(--basic-black);
+  margin: 20px auto;
+}
+.loginInfo div label {
+  display: block;
+  text-align: left;
+}
+.loginInfo div input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 2px solid var(--soft-black);
+}
+.formAccess {
+  /* display: flex; */
+}
+.formAccess div {
+  margin: 20px auto;
+}
+.formAccess a {
+  margin-right: 0;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.formButtons {
+  margin-top: 20px;
+}
+.formButtons hr {
+  margin: 20px auto;
+}
+.formButtons button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px auto;
+  background: var(--dark-blue);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.formButtons button:hover {
+  cursor: pointer;
+  background: var(--primary-blue);
+}
+.formButtons .fbButton {
+  background: #3B5998;
+}
+.formButtons .fbButton:hover {
+  background: rgb(24, 45, 92);
+}
+.formButtons .googButton {
+  background: #DE5246;
+}
+.formButtons .googButton:hover {
+  background: rgb(155, 46, 37);
+}
+
+.altAcct {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 100px);
+}
+.altAcct a {
+  color: var(--dark-blue);
+  font-weight: bold;
+}

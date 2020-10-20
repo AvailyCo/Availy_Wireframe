@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../assets/Availy_Logo1.png">
+  <title>Availy | Sign Up</title>
+</head>
+<body>
+  <div id="container">
+    <nav id="navBar">
+      <div class="availy">
+        <img class="icon" src="../assets/Availy_Logo1.png">
+        <a href="../index.html">
+          <h2 class="logoType">Availy</h2>
+        </a>
+      </div>
+      <div id="navSpacer"></div>
+      <div id="accessAcct">
+        <a href="/pages/login.html">Log In</a>
+        <a id="signUp" href="/pages/signup.html">Sign Up</a>
+      </div>
+    </nav>
+
+    <div id="signUpContent">
+      <form id="accountForm">
+        <h3 class="formHeader">Sign up for an account!</h3>
+
+        <section class="loginInfo">
+          <div>
+            <div>
+              <label for="firstName">First Name</label>
+              <input id="firstName" type="text" name="firstName">
+            </div>
+            <div>
+              <label for="lastName">Last Name</label>
+              <input id="lastName" type="text" name="lastName">
+            </div>
+
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email">
+          </div>
+          <div>
+            <label for="password">Password <span>(8 character minimum)</span></label>
+            <input id="password" type="password" name="password">
+          </div>
+        </section>
+
+        <div class="formAccess">
+          <div>
+            <label for="keepID">Keep me signed in</label>
+            <input id="keepID" type="checkbox" name="keepID">
+          </div>
+          <a href="#">Reset Password</a>
+        </div>
+
+        <div class="formButtons">
+          <button>Login</button>
+          <hr>
+          <button class="fbButton">Continue with Facebook</button>
+          <button class="googButton">Continue with Google</button>
+        </div>
+        <p class="altAcct">Already have an account? <a href="login.html">Log In!</a></p>
+      </form>
+    </div>
+
+    <footer id="footer">
+      <div class="availy">
+        <img class="icon" src="../assets/Availy_Logo1.png">
+        <a href="../index.html">
+          <h2 class="logoType">Availy</h2>
+        </a>
+      </div>
+      <ul id="additional">
+        <li>
+          <a href="#">
+            <p>Privacy Policy</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Terms</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p>Contact Us</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
