@@ -9,7 +9,7 @@
 </head>
 <body>
   <div id="container">
-    <nav id="navBar">
+    <nav id="navBar" class="fade">
       <div class="availy">
         <img class="icon" src="assets/Availy_Logo1.png">
         <a href="/index.html">
@@ -27,28 +27,45 @@
 
     <div id="content">
       <div id="landingSection">
-        <section>
+        <section id="hero">
           <div class="textSegment">
             <h3 class="text-seg-header">
-              Find a Time that Works for All
+              Find a time that works for all
             </h3>
             <p class="text-seg-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error itaque ipsam aut nemo omnis magnam laudantium repellat earum laborum.
+              Having trouble coordinating events with your friends? <span class="appName">Availy</span> can help! We sort through the schedules of multiple users to present you with the best times and dates to get your people together.
             </p>
-            <button class="text-seg-btn">
+            <br>
+            <br>
+            <a href="#step1" class="text-seg-btn">
               Get Started
-            </button>
+            </a>
           </div>
           <div class="landingImg" id="landing0"></div>
+          <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <defs>
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"> 
+                <stop offset="0%" style="stop-color:rgba(255, 162, 98, 0);stop-opacity:1" />
+                <stop offset="30%" style="stop-color:rgb(255, 162, 98);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255, 115, 88);stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"
+              style="
+                stroke: none;
+                fill: url(#grad1)">
+            </path>
+          </svg>
         </section>
   
-        <section>
+        <section id="step1">
           <div class="textSegment">
             <h3 class="text-seg-header">
-              Step 1: Create an event
+              Step 1: Build your Agenda
             </h3>
             <p class="text-seg-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error itaque ipsam aut nemo omnis magnam laudantium repellat earum laborum.
+              By filling out your general availability, your friends and groups are better equipped to create events that work around your schedule without causing any conflict!
             </p>
           </div>
           <div class="landingImg" id="landing1"></div>
@@ -60,7 +77,7 @@
               Step 2: Invite your friends
             </h3>
             <p class="text-seg-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error itaque ipsam aut nemo omnis magnam laudantium repellat earum laborum.
+              If your friends haven't signed up yet, don't worry - everyone is invited! With <span class="appName">Availy</span>, you can send invites via email, collect user's scheduling data, and continue to plan get-togethers with the utmost efficiency. You can also group your contacts together and invite everyone all at once!
             </p>
           </div>
           <div class="landingImg" id="landing2"></div>
@@ -72,10 +89,22 @@
               Step 3: Find times that work
             </h3>
             <p class="text-seg-info">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa error itaque ipsam aut nemo omnis magnam laudantium repellat earum laborum.
+              Once everyone has provided their most convenient times to meet, <span class="appName">Availy</span>'s algorithm will filter through everyone's availability and present you with the most convenient times and days to get all parties together.
             </p>
           </div>
           <div class="landingImg" id="landing3"></div>
+        </section>
+
+        <section>
+          <div class="textSegment">
+            <h3 class="text-seg-header">
+              Step 4: Create an event
+            </h3>
+            <p class="text-seg-info">
+              When you plan ahead with <span class="appName">Availy</span>, your events' success multiplies exponentially. By conveniently scheduling around others' schedules, you are much more likely to get a higher turn out!
+            </p>
+          </div>
+          <div class="landingImg" id="landing4"></div>
         </section>
       </div>
 
@@ -84,24 +113,24 @@
         <ul>
           <li>
             <div class="successImg" id="success1"></div>
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit a saepe perspiciatis blanditiis quaerat dolore excepturi natus! Veniam, quaerat?</blockquote>
+            <blockquote>I used to have trouble keeping up with my friends' busy schedules. We could only ever meet up with once or twice a month, and it was usually only one or two friends at a time. When we joined <span class="appName">Availy</span>, we were suddenly able to get groups of 5 or more to hang out at least once a week! My social life has received a major upgrade, and I've never been happier!</blockquote>
             <cite>Jane Doe</cite>
 
           </li>
           <li>
             <div class="successImg" id="success2"></div>
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit a saepe perspiciatis blanditiis quaerat dolore excepturi natus! Veniam, quaerat?</blockquote>
+            <blockquote>I've always loved fine dining, but not many of my friends liked the experience. When I searched <span class="appName">Availy</span>'s Groups, I found a community of people who share my passion, and was even shown the most convenient times to plan events with them! I have an even wider circle of friends these days, who I can comfortably meet up with to indulge in culinary excellence.</blockquote>
             <cite>John Smith</cite>
           </li>
           <li>
             <div class="successImg" id="success3"></div>
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate suscipit a saepe perspiciatis blanditiis quaerat dolore excepturi natus! Veniam, quaerat?</blockquote>
+            <blockquote>Availy has a little something for everyone - I network a lot as part of my career, so finding the right time to get the right punch of people together usually takes most of my day. With <span class="appName">Availy</span>'s Quick Event polling system, I am able to directly inquire the schedules of a ton of my new contacts all at once, and plan meetings that suit everyone's needs. Thanks Availy!</blockquote>
             <cite>Betty Crocker</cite>
           </li>
         </ul>
         <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
           <defs>
-            <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%"> 
+            <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%"> 
               <stop offset="0%" style="stop-color:rgb(255, 162, 98);stop-opacity:1" />
               <stop offset="100%" style="stop-color:rgb(255, 115, 88);stop-opacity:1" />
             </linearGradient>
@@ -110,7 +139,7 @@
             d="M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z"
             style="
               stroke: none;
-              fill: url(#grad1)">
+              fill: url(#grad2)">
           </path>
         </svg>
       </div>

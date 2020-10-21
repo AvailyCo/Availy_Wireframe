@@ -27,6 +27,16 @@ a {
   text-decoration: none;
 }
 
+.appName {
+  /* font-family: 'Pacifico', cursive; */
+  /* font-size: 1.2rem; */
+  color: var(--dark-orange);
+  /* font-weight: lighter; */
+}
+#successStories .appName {
+  color: var(--basic-black);
+}
+
 /* logo and icon styles */
 .availy {
   display: flex;
@@ -55,9 +65,12 @@ a {
   position: sticky;
   top: 0;
   background: white;
-  box-shadow: 0px -20px 30px 50px white;
+  /* box-shadow: 0px -20px 30px 50px white; */
   display: flex;
   z-index: 99;
+}
+.fade {
+  box-shadow: 0px -20px 30px 50px white;
 }
 
 #navBar #navSpacer {
@@ -90,16 +103,29 @@ a {
 }
 
 
-/* content area */
+/* --- CONTENT AREA --- */
 #content {
   padding-bottom: 150px;
 }
-
+#hero {
+  min-height: 100vh;
+  position: relative;
+}
+#hero svg {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -9;
+  transform: rotate(180deg);
+}
 .textSegment {
   padding: 20px;
+  z-index: 9;
 }
 .textSegment .text-seg-header {
   font-family: 'Pacifico', cursive;
+  font-weight: lighter;
   font-size: 1.5em;
   color: var(--basic-black);
   margin: 20px auto;
@@ -107,7 +133,7 @@ a {
 .textSegment .text-seg-info {
   line-height: 2rem;
 }
-.textSegment .text-seg-btn {
+.textSegment a {
   background: var(--dark-blue);
   border: none;
   margin: 20px;
@@ -116,7 +142,7 @@ a {
   color: white;
   font-weight: bold;
 }
-.textSegment .text-seg-btn:hover {
+.textSegment a:hover {
   cursor: pointer;
   background: var(--primary-blue);
 }
@@ -128,6 +154,7 @@ a {
   background-size: cover;
   width: 100%;
   height: 350px;
+  
 }
 #landing0{
   background-image: url('./assets/Landing0.png');
@@ -142,11 +169,15 @@ a {
   background-size: 100%;
 }
 #landing3 {
-  background-image: url('./assets/Landing3.png');
+  background-image: url('./assets/Landing4.png');
+  background-size: 100%;
+}
+#landing4 {
+  background-image: url('./assets/Landing5.png');
   background-size: 100%;
 }
 
-/* success stories */
+/* --- SUCCESS STORIES --- */
 #successStories {
   width: 100%;
   background: var(--secondary-orange);
@@ -303,9 +334,10 @@ svg {
 }
 .loginInfo div input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 30px;
   margin: 10px auto;
   border-radius: 5px;
+  text-align: left;
   border: 2px solid var(--soft-black);
 }
 .formAccess {
@@ -347,10 +379,10 @@ svg {
   background: rgb(24, 45, 92);
 }
 .formButtons .googButton {
-  background: #DE5246;
+  background: #4C8BF5;
 }
 .formButtons .googButton:hover {
-  background: rgb(155, 46, 37);
+  background: rgb(34, 93, 196);
 }
 
 .altAcct {
@@ -361,4 +393,87 @@ svg {
 .altAcct a {
   color: var(--dark-blue);
   font-weight: bold;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 720px) {
+  /* --- CONTENT AREA: responsive --- */
+  #hero {
+    height: 100vh;
+    position: relative;
+  }
+  #hero svg {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+  #landingSection section {
+    padding: 50px;
+    display: flex;
+  }
+  #landingSection section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .textSegment {
+    align-self: center;
+    padding: none;
+  }
+  #landingSection section .textSegment {
+    max-width: 50%;
+  }
+  #landingSection section:nth-child(even) .textSegment p {
+    text-align: right;
+  }
+  #landingSection section:nth-child(odd) .textSegment p {
+    text-align: left;
+  }
+  #landingSection section:nth-child(1) .textSegment p {
+    text-align: center;
+  }
+  .textSegment .text-seg-header {
+    font-family: 'Pacifico', cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    color: var(--basic-black);
+    margin: 20px auto;
+  }
+  /* ---SUCCESS STORIES: responsive */
+  #successStories {
+    padding: 20px 50px;
+  }
+  #successStories ul {
+    display: flex;
+  }
+  #successStories ul li {
+    flex: 1;
+    margin: 50px auto;
+    padding: 0;
+  }
+
+  blockquote {
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 10px .5em;
+  }
+  blockquote:before {
+    content: none;
+  }
+  blockquote:after {
+    content: none;
+  }
+
+  /* FOOTER */
+  #additional {
+    max-width: 30%;
+    left: 50%;
+    margin-left: -15%;
+  }
 }
