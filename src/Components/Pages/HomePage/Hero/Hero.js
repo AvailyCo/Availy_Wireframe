@@ -31,7 +31,7 @@ export class Hero extends Component {
           </a>
         </div>
         <img
-          className="landingImg"
+          id="heroImg"
           src={info.imgURL}
         />
         {/* <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">

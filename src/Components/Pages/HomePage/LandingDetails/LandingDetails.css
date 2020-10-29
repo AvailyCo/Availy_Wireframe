@@ -1,3 +1,7 @@
+.landingDetails {
+  display: flex;
+  flex-direction: column;
+}
 .textSegment {
   padding: 20px;
   z-index: 9;
@@ -31,16 +35,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px; 
+  max-width: 100%;
 }
 
 
 
 
-@media only screen and (width: 720px) {
+@media only screen and (min-width: 720px) {
+  .landingDetails {
+    flex-direction: row;
+  }
   .textSegment {
     align-self: center;
     padding: none;
+    min-width: 50%;
+    border: 2px dashed var(--secondary-blue);
+    border-radius: 20px;
   }
   .textSegment .text-seg-header {
     font-family: 'Pacifico', cursive;
@@ -48,5 +58,11 @@
     font-size: 2em;
     color: var(--basic-black);
     margin: 20px auto;
+  }
+  .landingImg {
+    /* background-color: black; */
+    height: 250px;
+    max-width: 50%;
+    align-self: center;
   }
 }

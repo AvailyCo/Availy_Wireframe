@@ -15,7 +15,7 @@ export class LandingDetails extends Component {
     const info = this.props.info;
 
     return (
-      <section>
+      <section class="landingDetails">
         <div class="textSegment">
           <h3 class="text-seg-header">
             {info.header}
