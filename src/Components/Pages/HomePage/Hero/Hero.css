@@ -1,0 +1,12 @@
+#hero {
+  min-height: 100vh;
+  position: relative;
+  background: var(--dark-orange);
+}
+
+@media only screen and (min-width: 720px) {
+  #hero {
+    height: 100vh;
+    position: relative;
+  }
+}

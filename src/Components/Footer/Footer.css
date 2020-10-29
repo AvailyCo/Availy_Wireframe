@@ -1,0 +1,53 @@
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background: var(--basic-black);
+  color: white;
+  /* padding: 20px; */
+}
+
+.footerBrand {
+  margin-top: 20px;
+}
+
+#footerIcon {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+#footerLogo {
+  align-self: center;
+  font-family: 'Pacifico', cursive;
+  color: var(--dark-orange);
+}
+
+#additional {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+}
+#additional li {
+  list-style-type: none;
+}
+#additional li a p{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+#additional li a p:hover {
+  color: var(--primary-blue); 
+}
+
+
+@media only screen and (min-width: 720px) {
+  #additional {
+    max-width: 50%;
+    left: 50%;
+    margin-left: -25%;
+  }
+}

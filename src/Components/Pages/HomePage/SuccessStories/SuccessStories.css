@@ -1,0 +1,31 @@
+#successStories {
+  width: 100%;
+  background: var(--secondary-orange);
+  padding: 20px;
+  position: relative;
+  /* padding-bottom: 100%; */
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 0;
+}
+
+#successStories h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.75rem;
+  color: var(--basic-black);
+  margin: 20px auto;
+}
+#successStories ul {
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 720px){
+  #successStories {
+    padding: 20px 50px;
+  }
+  #successStories ul {
+    display: flex;
+  }
+}

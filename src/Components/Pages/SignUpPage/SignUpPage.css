@@ -1,0 +1,6 @@
+#signUpContent {
+  padding: 50px 20px 50px 20px;
+  background-image: linear-gradient(to bottom, var(--primary-orange),var(--secondary-orange));
+  min-height: 100vh;
+  width: 100%;
+}
